@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Her photo here">
+  <defs>
+    <linearGradient id="g9001200" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdeae4"/>
+      <stop offset="1" stop-color="#f7d9e4"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g9001200)"/>
+  <g fill="none" stroke="#c98a97" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+    <rect x="240" y="430" width="420" height="330" rx="14" stroke-dasharray="12 10"/>
+    <circle cx="370" cy="540" r="30"/>
+    <path d="M430 566h80l40 -46h176v82h-286z"/>
+  </g>
+  <text x="450" y="850" text-anchor="middle" font-family="Quicksand, ui-sans-serif, system-ui, sans-serif" font-size="46" font-weight="700" fill="#a8566b">Her photo here</text>
+</svg>
