@@ -1,0 +1,25 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local scratch
+scratch/
+tmp/
+*.log
+.env
+.env.*
+
+# Node, if a tooling step is ever added
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

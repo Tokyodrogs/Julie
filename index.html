@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All About Julie</title>
+    <meta
+      name="description"
+      content="A little page all about Julie — her basics, her favorites, and her photos."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:title" content="All About Julie" />
+    <meta
+      property="og:description"
+      content="Her basics, her favorite foods, and a gallery of her photos."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/portrait.svg" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="scroll-progress" data-progress aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Floating hearts background -->
+    <div class="hearts" aria-hidden="true" data-hearts></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true">&#9829;</span>
+        <span class="brand-name">Julie</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Sections">
+        <a href="#basics">Basics</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#gallery">Photos</a>
+        <a href="#likes">Likes</a>
+        <a href="#note">Note</a>
+        <button
+          type="button"
+          class="theme-toggle"
+          data-theme-toggle
+          aria-pressed="false"
+          aria-label="Switch to dark theme"
+        >
+          <span class="theme-icon" aria-hidden="true"></span>
+          <span class="sr-only">Toggle theme</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">All about</p>
+          <h1 class="hero-name reveal">Julie</h1>
+          <p class="hero-tagline reveal">
+            Her favorite foods, the little things that make her her, and every
+            photo worth keeping &mdash; all on one page.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#gallery">See her photos</a>
+            <a class="btn btn-ghost" href="#favorites">Her favorites</a>
+          </div>
+          <dl class="hero-stats reveal">
+            <div>
+              <dt>Favorite food</dt>
+              <dd>Pasta</dd>
+            </div>
+            <div>
+              <dt>Drink order</dt>
+              <dd>Brown sugar milk tea</dd>
+            </div>
+            <div>
+              <dt>Flower</dt>
+              <dd>Pink peonies</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="polaroid polaroid-hero reveal">
+          <div class="polaroid-photo">
+            <img
+              src="images/portrait.svg"
+              alt="Portrait of Julie"
+              width="900"
+              height="1200"
+              data-photo-slot="portrait"
+            />
+          </div>
+          <figcaption>my favorite person</figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ BASICS ============ -->
+      <section class="section" id="basics">
+        <h2 class="section-title reveal">The basics</h2>
+        <p class="section-lede reveal">
+          Quick facts. Swap any of these for the real details.
+        </p>
+
+        <dl class="facts">
+          <div class="fact reveal">
+            <dt>Full name</dt>
+            <dd data-editable>Julie &mdash; add her full name</dd>
+          </div>
+          <div class="fact reveal">
+            <dt>Birthday</dt>
+            <dd data-editable>Add her birthday</dd>
+          </div>
+          <div class="fact reveal">
+            <dt>Zodiac</dt>
+            <dd data-editable>Add her sign</dd>
+          </div>
+          <div class="fact reveal">
+            <dt>From</dt>
+            <dd data-editable>Add her hometown</dd>
+          </div>
+          <div class="fact reveal">
+            <dt>School / work</dt>
+            <dd data-editable>Add what she does</dd>
+          </div>
+          <div class="fact reveal">
+            <dt>Her thing</dt>
+            <dd data-editable>One sentence that is so her</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- ============ FAVORITES ============ -->
+      <section class="section" id="favorites">
+        <h2 class="section-title reveal">Favorites</h2>
+        <p class="section-lede reveal">
+          The foods, drinks, and little joys she always picks.
+        </p>
+
+        <div class="fav-grid">
+          <article class="fav-card fav-card-photo reveal">
+            <img
+              src="images/fav-food-1.jpg"
+              alt="A plate of creamy pasta"
+              loading="lazy"
+              width="1024"
+              height="1024"
+            />
+            <div class="fav-body">
+              <h3>Food she can never refuse</h3>
+              <p>
+                Creamy pasta, extra pepper. She orders the same thing every
+                time and has zero regrets about it.
+              </p>
+              <p class="fav-tag">Pasta &middot; Carbonara</p>
+            </div>
+          </article>
+
+          <article class="fav-card fav-card-photo reveal">
+            <img
+              src="images/fav-food-2.jpg"
+              alt="A slice of strawberry cream cake"
+              loading="lazy"
+              width="1024"
+              height="1024"
+            />
+            <div class="fav-body">
+              <h3>Sweet tooth</h3>
+              <p>
+                Strawberry cake, the kind with too much cream. Dessert is not
+                optional, it is the plan.
+              </p>
+              <p class="fav-tag">Strawberry &middot; Cake</p>
+            </div>
+          </article>
+
+          <article class="fav-card fav-card-photo reveal">
+            <img
+              src="images/fav-drink.jpg"
+              alt="An iced brown sugar milk tea with tapioca pearls"
+              loading="lazy"
+              width="1024"
+              height="1024"
+            />
+            <div class="fav-body">
+              <h3>Her regular order</h3>
+              <p>
+                Brown sugar milk tea, less ice, extra pearls. This is the
+                fastest way to fix a bad day.
+              </p>
+              <p class="fav-tag">Milk tea &middot; Less ice</p>
+            </div>
+          </article>
+
+          <article class="fav-card fav-card-photo reveal">
+            <img
+              src="images/fav-flowers.jpg"
+              alt="A bouquet of pink peonies wrapped in kraft paper"
+              loading="lazy"
+              width="1024"
+              height="1024"
+            />
+            <div class="fav-body">
+              <h3>Flowers for her</h3>
+              <p>
+                Pink peonies. Bring these and she pretends it was not
+                necessary, then keeps them until they dry.
+              </p>
+              <p class="fav-tag">Peonies &middot; Pink</p>
+            </div>
+          </article>
+
+          <article class="fav-card reveal">
+            <div class="fav-body">
+              <h3>Colors</h3>
+              <ul class="swatches">
+                <li>
+                  <span class="swatch" style="--c: #f4a6b8"></span>Blush pink
+                </li>
+                <li>
+                  <span class="swatch" style="--c: #f6e3c5"></span>Cream
+                </li>
+                <li>
+                  <span class="swatch" style="--c: #a8c8a0"></span>Sage
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="fav-card reveal">
+            <div class="fav-body">
+              <h3>On repeat</h3>
+              <p class="fav-list">
+                Her current playlist &mdash; replace with the songs she
+                actually loops.
+              </p>
+              <ul class="fav-plain">
+                <li>Song one &mdash; artist</li>
+                <li>Song two &mdash; artist</li>
+                <li>Song three &mdash; artist</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="fav-card reveal">
+            <div class="fav-body">
+              <h3>Comfort watch</h3>
+              <p class="fav-list">
+                The shows and movies she re-watches when she wants to feel
+                okay.
+              </p>
+              <ul class="fav-plain">
+                <li>Add her comfort show</li>
+                <li>Add her comfort movie</li>
+                <li>Add the one she cries at</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="fav-card reveal">
+            <div class="fav-body">
+              <h3>Small joys</h3>
+              <ul class="fav-plain">
+                <li>Rainy afternoons</li>
+                <li>Late-night drives</li>
+                <li>Street food after class</li>
+                <li>Add her own list here</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ GALLERY ============ -->
+      <section class="section section-wide" id="gallery">
+        <h2 class="section-title reveal">Photos of her</h2>
+        <p class="section-lede reveal">
+          Tap any photo to open it full size. Filter by moment.
+        </p>
+
+        <div class="filters reveal" role="group" aria-label="Filter photos">
+          <button type="button" class="chip is-active" data-filter="all">
+            All
+          </button>
+          <button type="button" class="chip" data-filter="smiles">
+            Smiles
+          </button>
+          <button type="button" class="chip" data-filter="dates">Dates</button>
+          <button type="button" class="chip" data-filter="everyday">
+            Everyday
+          </button>
+        </div>
+
+        <ul class="gallery" data-gallery>
+          <li class="reveal" data-cat="smiles">
+            <button type="button" class="frame" data-lightbox="0">
+              <img
+                src="images/gallery-1.svg"
+                alt="Photo of Julie, slot 1"
+                width="800"
+                height="1000"
+                data-photo-slot="gallery-1"
+              />
+              <span class="frame-caption">Photo 1</span>
+            </button>
+          </li>
+          <li class="reveal" data-cat="dates">
+            <button type="button" class="frame" data-lightbox="1">
+              <img
+                src="images/gallery-2.svg"
+                alt="Photo of Julie, slot 2"
+                width="800"
+                height="1000"
+                data-photo-slot="gallery-2"
+              />
+              <span class="frame-caption">Photo 2</span>
+            </button>
+          </li>
+          <li class="reveal" data-cat="everyday">
+            <button type="button" class="frame" data-lightbox="2">
+              <img
+                src="images/gallery-3.svg"
+                alt="Photo of Julie, slot 3"
+                width="800"
+                height="1000"
+                data-photo-slot="gallery-3"
+              />
+              <span class="frame-caption">Photo 3</span>
+            </button>
+          </li>
+          <li class="reveal" data-cat="smiles">
+            <button type="button" class="frame" data-lightbox="3">
+              <img
+                src="images/gallery-4.svg"
+                alt="Photo of Julie, slot 4"
+                width="800"
+                height="1000"
+                data-photo-slot="gallery-4"
+              />
+              <span class="frame-caption">Photo 4</span>
+            </button>
+          </li>
+          <li class="reveal" data-cat="dates">
+            <button type="button" class="frame" data-lightbox="4">
+              <img
+                src="images/gallery-5.svg"
+                alt="Photo of Julie, slot 5"
+                width="800"
+                height="1000"
+                data-photo-slot="gallery-5"
+              />
+              <span class="frame-caption">Photo 5</span>
+            </button>
+          </li>
+          <li class="reveal" data-cat="everyday">
+            <button type="button" class="frame" data-lightbox="5">
+              <img
+                src="images/gallery-6.svg"
+                alt="Photo of Julie, slot 6"
+                width="800"
+                height="1000"
+                data-photo-slot="gallery-6"
+              />
+              <span class="frame-caption">Photo 6</span>
+            </button>
+          </li>
+        </ul>
+
+        <p class="hint reveal">
+          Drop your pictures into <code>images/</code> as
+          <code>gallery-1.jpg</code>, <code>gallery-2.jpg</code>&hellip; and
+          update the <code>src</code> &mdash; or just send them to me and
+          I will wire them in.
+        </p>
+      </section>
+
+      <!-- ============ LIKES ============ -->
+      <section class="section" id="likes">
+        <h2 class="section-title reveal">Things she likes</h2>
+        <p class="section-lede reveal">
+          A running list. Add anything that reminds you of her.
+        </p>
+        <ul class="tags reveal">
+          <li>Milk tea</li>
+          <li>Pasta</li>
+          <li>Pink</li>
+          <li>Peonies</li>
+          <li>Rainy days</li>
+          <li>Late-night drives</li>
+          <li>Cute cafes</li>
+          <li>Rom-coms</li>
+          <li>Sunsets</li>
+          <li>Strawberry anything</li>
+          <li>Add more&hellip;</li>
+        </ul>
+      </section>
+
+      <!-- ============ NOTE ============ -->
+      <section class="section" id="note">
+        <blockquote class="note-card reveal">
+          <p>
+            &ldquo;This is the part where you write the real thing &mdash; why
+            she is your favorite person, in your own words.&rdquo;
+          </p>
+          <cite>&mdash; written by you</cite>
+        </blockquote>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Made with <span class="heart" aria-hidden="true">&#9829;</span> for
+        Julie &middot; <span data-year>2025</span> &middot;
+        <a href="#top">Back to top</a>
+      </p>
+    </footer>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div
+      class="lightbox"
+      data-lightbox-root
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo viewer"
+    >
+      <button
+        type="button"
+        class="lb-close"
+        data-lightbox-close
+        aria-label="Close photo viewer"
+      >
+        &times;
+      </button>
+      <button
+        type="button"
+        class="lb-nav lb-prev"
+        data-lightbox-prev
+        aria-label="Previous photo"
+      >
+        &#8249;
+      </button>
+      <figure class="lb-figure">
+        <img src="images/portrait.svg" alt="" data-lightbox-image />
+        <figcaption data-lightbox-caption></figcaption>
+      </figure>
+      <button
+        type="button"
+        class="lb-nav lb-next"
+        data-lightbox-next
+        aria-label="Next photo"
+      >
+        &#8250;
+      </button>
+    </div>
+
+    <p class="toast" role="status" aria-live="polite" data-toast hidden></p>
+  </body>
+</html>
